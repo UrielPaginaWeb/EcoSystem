@@ -1,0 +1,89 @@
+
+<html>
+    <head>
+        <title>Mi Perfil</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="logoES.png">
+        <link rel="stylesheet" type="text/css" href="usuario.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap">
+        
+    </head>
+    <center>    
+    <body>
+        <div class="divmenu">
+            <div id="side-panel" class="contenido">
+                <a href="usuario.html">Panel</a><br>
+                <a href="agregardesecho.html">Subidos recientes</a><br>
+                <a href="agregardesecho.html">Agregar desecho</a><br>
+                <a href="login.html">Cerrar sesión</a>
+            </div>  
+                <div id="side-panel-trigger" class="side-panel-trigger">
+                <a href="#" onclick="toggleSidePanel()">
+                    <img src="menu.png" width="60px">
+                </a>
+            </div>
+                <script>
+                    function toggleSidePanel() {
+                    var sidePanel = document.getElementById('side-panel');
+                    sidePanel.style.display = (sidePanel.style.display === 'block') ? 'none' : 'block';
+                }
+                </script>
+        </div>
+        <div class="contenedormiperfil">
+            <br>
+            <div class="titulomiperfil">
+                <label for="crear">Mi Perfil</label>
+            </div>
+            <div class="contenedorizqmiperfil"  >
+                <br><br>
+                <div class="contenedordatosizqmiperfil" id="div3">
+                    <label for="">*Nombre completo:</label><br>
+                    <input class="inputcrearmiperfil" type="text" ><br><br>
+                    <label for="">Correo electrónico:</label><br>
+                    <input class="inputcrearmiperfil" type="text" placeholder="ejemplo.correo@gmail.com"><br><br>
+                    <label for="">*Contraseña:</label><br>
+                    <input class="inputcrearmiperfil" type="text" placeholder="···········"><br><br>
+                    <label for="">*Teléfono:</label><br>
+                    <input class="inputcrearmiperfil" type="text" placeholder="XXX-XXX-XXXX"><br><br>
+                    <label for="">*Código postal:</label><br>
+                    <input class="inputcrearmiperfil" type="text" ><br><br>
+                    <label for="">*Estado:</label><br>
+                    <input class="inputcrearmiperfil" type="text" ><br><br>
+                    <label for="">*Municipio:</label><br>
+                    <input class="inputcrearmiperfil" type="text"><br><br>
+                    <label for="">*Colonia:</label><br>
+                    <input class="inputcrearmiperfil" type="text" ><br><br>
+                    <label for="">*Calle</label><br>
+                    <input class="inputcrearmiperfil" type="text" ><br><br>
+                </div>
+            </div><br><br><br>
+            <div class="contenedordermiperfil">
+                <div class="contenedordatosdermiperfil" id="div2">
+                    <br><br><br>
+                    <img src="iconoperfil.png" alt="" style="width: 60%;"><br><br><br>
+                    <button  onclick="window.location.href='editardato.html'" class="btneditar" >Editar Datos</button>
+                    <br><br><br><br><br>
+                    <div class="divpesoyfechamiperfil">
+                        <div>
+                            <label for="">*Número exterior</label><br>
+                            <input class="inputdatosdermiperfil" type="text" ><br><br>
+                        </div>
+                        <div>
+                            <label for="">Número interior:</label><br>
+                            <input class="inputdatosdermiperfil" type="text" ><br><br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="labels">
+                        <label for="" >Indicaciones adicionales de esta dirección</label><br>
+                        <textarea rows="4" cols="50" class="textareamiperfil"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+        

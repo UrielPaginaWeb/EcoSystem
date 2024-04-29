@@ -1,0 +1,133 @@
+
+<html>
+    <head>
+        <title>Login</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="logoES.png">
+        <link rel="stylesheet" type="text/css" href="csslogin.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap">
+        
+    </head>
+    <center>    
+    <body>
+        <div class="contenedorlogin">
+            <div class="contenedorlogin2">
+                <div class="contenedorlogo">
+                    <img src="EcoSystem.png">
+                </div>
+            </div>
+            <div class="contenedorlogin3">
+                <div class="contenedordatos">
+                    <div class="datos">
+                        <label class="Primerlabel" for="">Bienvenido(a):</label><br>
+                        <br><br><div class="botones">
+                            <button onclick="showContainer('cliente')" class="botoneslogin">Cliente</button>
+                            <button onclick="showContainer('recolector')" class="botoneslogin">Recolector</button>
+                            <button onclick="showContainer('admin')" class="botoneslogin">Administrador</button>
+                        </div><br><br>
+                        <div class="datos2" id="contenedorcliente">
+                            <label for="">Correo electrónico:</label><br>
+                            <input class="inputlogin" type="text" placeholder="ejemplo.correo@gmail.com"><br><br><br>
+                            <label for="Contraseña" >Contraseña: </label>
+                            <button type="button" id="botoncontraseña" class="btnOjo">
+                                <img src="abrirojo.png" alt="Mostrar contraseña" class="iconoojo" id="abrirojo">
+                                <img src="cerrarojo.png" alt="Ocultar contraseña" class="iconoojo" id="cerrarojo" style="display:none;">
+                            </button>
+                            <input class="inputlogin" type="password"  id="inputcontraseña" placeholder="···········" ><br><br><br>
+                            <center>
+                                <button class="iniciarsesion" type="submit" onclick="window.location.href='usuario.html'">Ingresar</button><br><br>
+                                <a href="crearcuentacliente.html" class="labelIS">¿No tienes cuenta? Regístrate </a><br><br>
+                                <a class="labelAccederapido">Acceso rápido con: </a>
+                                <div class="iconos">
+                                    <a href="" class="imgGyF"><img src="iconogoogle.png" alt="" ></a>
+                                    <a href="" class="imgGyF"><img src="iconofacebook.png" alt="" ></a>
+                                </div>
+                            </center>
+                        </div>
+
+                        <div class="datos2" id="contenedorrecolector">
+                            <label for="">Correo electrónico:</label><br>
+                            <input class="inputlogin" type="text" placeholder="ejemplo.correo@gmail.com"><br><br><br>
+                            <label for="Contraseña" >Contraseña: </label>
+                            <button type="button" id="botoncontraseña" class="btnOjo">
+                                <img src="abrirojo.png" alt="Mostrar contraseña" class="iconoojo" id="abrirojo">
+                                <img src="cerrarojo.png" alt="Ocultar contraseña" class="iconoojo" id="cerrarojo" style="display:none;">
+                            </button>
+                            <input class="inputlogin" type="password"  id="inputcontraseña" placeholder="···········" ><br><br><br>
+                            <center>
+                                <button class="iniciarsesion" onclick="window.location.href='recolector.html'">Ingresar</button><br><br>
+                                <a href="registrarrecolector.php" class="labelIS">¿No tienes cuenta? Regístrate </a><br><br>
+                                <a class="labelAccederapido">Acceso rápido con: </a>
+                                <div class="iconos">
+                                    <a href="" class="imgGyF"><img src="iconogoogle.png" alt="" ></a>
+                                    <a href="" class="imgGyF"><img src="iconofacebook.png" alt="" ></a>
+                                </div>
+                            </center>
+                        </div>
+
+                        <div class="datos2" id="contenedoradmin">
+                            <label for="">Correo electrónico:</label><br>
+                            <input class="inputlogin" type="text" placeholder="ejemplo.correo@gmail.com"><br><br><br>
+                            <label for="Contraseña" >Contraseña: </label>
+                            <button type="button" id="botoncontraseña" class="btnOjo">
+                                <img src="cerrarojo.png" alt="Ocultar contraseña" class="iconoojo" id="cerrarojo" style="display:none;">
+                                <img src="abrirojo.png" alt="Mostrar contraseña" class="iconoojo" id="abrirojo">
+                                
+                            </button>
+                            <input class="inputlogin" type="password"  id="inputcontraseña" placeholder="···········" ><br><br><br>
+                            <center>
+                                <button class="iniciarsesion" type="submit">Ingresar</button>
+                            </center>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var currentContainer = localStorage.getItem("currentContainer") || "cliente"; 
+    showContainer(currentContainer);
+    });
+
+    function showContainer(container) {
+        localStorage.setItem("currentContainer", container);
+
+        document.getElementById('contenedorcliente').style.display = 'none';
+        document.getElementById('contenedorrecolector').style.display = 'none';
+        document.getElementById('contenedoradmin').style.display = 'none';
+
+        if (container === 'cliente') {
+        document.getElementById('contenedorcliente').style.display = 'block';
+        } else if (container === 'recolector') {
+        document.getElementById('contenedorrecolector').style.display = 'block';
+        } else if (container === 'admin') {
+        document.getElementById('contenedoradmin').style.display = 'block';
+        }
+
+    }
+</script>
+<script>
+    document.getElementById("botoncontraseña").addEventListener("click", function() {
+      var passwordInput = document.getElementById("inputcontraseña");
+      var abrirojo = document.getElementById("abrirojo");
+      var cerrarojo = document.getElementById("cerrarojo");
+      
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        abrirojo.style.display = "none";
+        cerrarojo.style.display = "inline";
+      } else {
+        passwordInput.type = "password";
+        abrirojo.style.display = "inline";
+        cerrarojo.style.display = "none";
+      }
+    });
+  </script>
+        

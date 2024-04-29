@@ -1,0 +1,111 @@
+
+<html>
+    <head>
+        <title>Subidos Recientes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="logoES.png">
+        <link rel="stylesheet" type="text/css" href="usuario.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap">
+        
+    </head>
+    <center>    
+    <body>
+        <div class="divmenu">
+            <div id="side-panel" class="contenido">
+                <a href="miperfil.html">Mi perfil</a><br>
+                <a href="usuario.html">Panel</a><br>
+                <a href="agregardesecho.html">Agregar desecho</a><br>
+                <a href="login.html">Cerrar sesión</a>
+            </div>  
+                <div id="side-panel-trigger" class="side-panel-trigger">
+                <a href="#" onclick="toggleSidePanel()">
+                    <img src="menu.png" width="60px">
+                </a>
+            </div>
+                <script>
+                    function toggleSidePanel() {
+                    var sidePanel = document.getElementById('side-panel');
+                    sidePanel.style.display = (sidePanel.style.display === 'block') ? 'none' : 'block';
+                }
+                </script>
+        </div>
+        <div class="contenedoragregardesecho">
+            <br>
+            <div class="titulo">
+                <label for="crear">Subidos Recientes</label>
+            </div>
+            <div class="contenedordatossubidos"  >
+                <div class="contenedorbuscar">
+                    <div class="numserie">
+                        <div class="labelserie">
+                            <label for="">Número de serie del producto</label>
+                        </div>
+                        <div class="divinput">
+                            <input type="text" class="inputserie"><img src="lupa.png" alt="" width="15%">
+                        </div>
+                    </div>
+                </div>
+                <div class="contendortabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Número de serie</th>
+                                <th>Producto</th>
+                                <th>Marca</th>
+                                <th>Estatus</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="verdesecho.html" class="linkstd">0000000000</a></td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                                <td>ejemplo</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+

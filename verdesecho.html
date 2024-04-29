@@ -1,0 +1,76 @@
+
+<html>
+    <head>
+        <title>Agregar Desecho</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="logoES.png">
+        <link rel="stylesheet" type="text/css" href="usuario.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap">
+        
+    </head>
+    <center>    
+    <body>
+        <div class="divmenu">
+            <div id="side-panel" class="contenido">
+                <a href="miperfil.html">Mi perfil</a><br>
+                <a href="usuario.html">Panel</a><br>
+                <a href="agregardesecho.html">Subidos recientes</a><br>
+                <a href="login.html">Cerrar sesión</a>
+            </div>  
+                <div id="side-panel-trigger" class="side-panel-trigger">
+                <a href="#" onclick="toggleSidePanel()">
+                    <img src="menu.png" width="60px">
+                </a>
+            </div>
+                <script>
+                    function toggleSidePanel() {
+                    var sidePanel = document.getElementById('side-panel');
+                    sidePanel.style.display = (sidePanel.style.display === 'block') ? 'none' : 'block';
+                }
+                </script>
+        </div>
+        <div class="contenedoragregardesecho">
+            <br>
+            <div class="contenedorizq"  >
+                <div class="contenedordatosizq" id="div3">
+                    <label for="" class="labeldatosgenerales">Datos generales</label><br><br><br>
+                    
+                    <label for="">*Número de serie:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                    <label for="">*Nombre:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                    <label for="">*Marca:</label><br>
+                    <input class="inputcrear" type="text"><br><br>
+                    <label for="">*Modelo:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                    <label for="">Color:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                </div>
+            </div><br><br><br><br><br>
+            <div class="contenedorder">
+                <div class="contenedordatosder" id="div4">
+                    <div class="divdatosder2">
+                        <div class="divpeso">
+                            <label for="">*Peso:</label><br>
+                            <input class="inputdatosder2" type="text" ><br><br>
+                        </div>
+                        <div class="divfecha">
+                            <label for="">Fecha de adquisicion:</label><br>
+                            <input class="inputdatosder2" type="date" ><br><br>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <label for="" >Estatus:</label><br>
+                        <input class="inputcrear" type="text" ><br><br>
+                    </div>
+                    <br><br><br><br>
+                    <button class="btneditar" onclick="window.location.href='subidosrecientes.html'">Regresar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+        

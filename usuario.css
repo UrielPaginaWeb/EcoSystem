@@ -1,0 +1,518 @@
+/*INTERFAZ DE USUARIO*/
+.contenedorusuario{
+    width: 90%;
+    height: 96%;
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contenedorusuario2{
+    width:100%;
+    height: 100%;
+    background-color: #ffffff;
+    margin: 1%;
+}
+
+
+
+.divmenulogo{
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    text-align: right;
+}
+.divlogo{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(255, 255, 255);
+    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.divmenuusuario{
+    width: 100%;
+    height: 10%;
+    text-align: right;
+}
+
+        .imglogo{
+            width: 25%;
+        }
+        .imgmenu{
+            width: 10%;
+            float: right;
+        }
+        /*MENU*/
+        .divmenu{
+            width: 30%;
+            height: 1%;
+            right: 10%;
+            top: 12%;
+            position: absolute;
+            background-color: #ffffff;
+        }
+        .contenido{
+            font-family: 'Raleway';
+            font-size: 15px;
+        }
+        #side-panel {
+            display: none;
+            width: 70%;
+            height: 3000%;
+            background-color: white;
+            color: black;
+            float: right;
+            border: 1px solid #008E5A;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+            padding-top: 10px;
+            font-family: 'Codec Pro', sans-serif; 
+            font-size: 100%;
+          }
+        
+          #side-panel a {
+            padding: 2%;
+            text-decoration: none;
+            color: black;
+            display: block;
+          }
+        
+          #side-panel-trigger {
+            float: right;
+            top: 2%;
+            left: 2%;
+            cursor: pointer;
+            z-index: 2;
+          }
+
+.divagregar{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+        .imgagregarsubir{
+            width: 80%;
+        }
+
+        
+
+.divsubidos{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+     
+
+
+/*AGREGAR DESECHO*/
+/**/
+.contenedoragregardesecho{
+    width: 100%;
+    height: 97%;
+    background-color: #ffffff;
+}
+.titulo{
+    width: 60%;
+    height: 8%;
+    background-color: #00BF63;
+    border-radius: 10px;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 190%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.contenedorizq{
+    width:50%;
+    height: 92%;
+    background-color: #ffffff;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.contenedorder{
+    width:50%;
+    height: 92%;
+    background-color: #ffffff;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contenedordatosizq{
+    width:80%;
+    height: 80%;
+    background-color: #ffffff;
+    float: left;
+    text-align: left;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 150%;
+}
+    .inputcrear{
+        width: 100%;
+        height: 9%;
+        padding: 10px;
+        font-family: 'Codec Pro', sans-serif; 
+        font-size: 90%;
+        border: none;
+        border-radius: 20px;
+        background-color: #ededed;
+    }
+
+.contenedordatosder{
+    width:80%;
+    height: 80%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+    .divdatosder2{
+        width: 100%;
+        height: 17%;
+        background-color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: justify;
+        font-family: 'Codec Pro', sans-serif; 
+        font-size: 150%;
+    }
+    .divpeso{
+        width: 40%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    .divfecha{
+        width: 60%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    .inputdatosder2{
+        width: 100%;
+        height: 40%;
+        padding: 10px;
+        font-family: 'Codec Pro', sans-serif; 
+        font-size: 90%;
+        border: none;
+        border-radius: 20px;
+        background-color: #ededed;
+    }
+    .labels{
+        text-align: justify;
+        font-family: 'Codec Pro', sans-serif; 
+        font-size: 150%;
+    }
+    .labeldatosgenerales{
+        font-family: 'Codec Pro', sans-serif; 
+        font-size: 120%;
+        font-weight: bold;
+        color: #00BF63;
+    }
+
+    .btnseleccionae{
+        width: 100%;
+        height: 8%;
+        text-align: right;
+    }
+
+    .botonguardar{
+        width: 60%;
+        height: 10%;
+        padding: 10px 20px;
+        background-color: #00BF63;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 90%;
+        font-weight: bold;
+        font-family: 'Codec Pro', sans-serif; 
+
+    }
+
+    /*subir archivos*/
+    .divimagenes{
+        width: 100%;
+        height: 50%;
+        background-color: rgb(255, 255, 255);
+        text-align: justify;
+    }
+    .delete-button {
+        background-color: #b8b9b9;
+        color: rgb(0, 0, 0);
+        border: none;
+        border-radius: 50%;
+        padding: 5px;
+        font-size: 9px;
+        cursor: pointer;
+    }
+
+    #image-preview {
+        width: 100%;
+        height: 80%; 
+        overflow-x: auto; /* Habilitar desplazamiento horizontal */
+        white-space: nowrap; /* Evitar saltos de línea */
+        border: none;
+        padding: 5px; 
+        border-radius: 30px;
+        background-color: #ededed;
+    }
+
+    /* Estilos para los contenedores de miniaturas */
+    .image-container {
+        display: inline-block;
+        margin-right: 5px; 
+        vertical-align: top; 
+    }
+    /* Estilos para el botón de selección de archivos personalizado */
+    .custom-file-button {
+        width: 40%;
+        height: 27%;
+        background-color: #F3F3F3;
+        color: rgb(0, 0, 0); 
+        padding: 6px 15px; 
+        border: none; 
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 80%;
+        font-family: 'Codec Pro', sans-serif; 
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        float: right;
+    }
+
+    .custom-file-button:hover {
+        background-color: #b8b9b9; 
+    }
+
+    .custom-file-button:active {
+        background-color: #b8b9b9;
+    }
+
+/*SUBIDOS RECIENTES*/
+.contenedordatossubidos{
+    width: 80%;
+    height: 90%;
+    background-color: #ffffff;
+}
+.contenedorbuscar{
+    width: 100%;
+    height: 20%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        .numserie{
+            width: 75%;
+            height: 50%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .labelserie{
+            width: 60%;
+            text-align: justify;
+            font-family: 'Codec Pro', sans-serif; 
+            font-size: 150%;
+            float: left;
+        }
+        .divinput{
+            width: 40%;
+            text-align: right;
+            justify-content: right;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+        .inputserie{
+            width: 80%;
+            padding: 10px;
+            font-family: 'Codec Pro', sans-serif; 
+            font-size: 90%;
+            border: none;
+            border-radius: 20px;
+            background-color: #ededed;
+
+        }
+.contendortabla{
+    width: 100%;
+    height: 80%;
+    background-color: #d3c725;
+    overflow-x: auto;
+}
+        table {
+            width: 100%; 
+            border-collapse: collapse;
+            border: 3px solid #000000; 
+        }
+        th{
+            border: 3px solid #000000; 
+            padding: 3%; 
+            text-align: left; 
+            background-color:#D9D9D9;
+            text-align: center;
+        }
+        td {
+            border: 3px solid #000000; 
+            padding: 3%; 
+            text-align: left; 
+            background-color: #ffffff;
+            font-family: 'Codec Pro', sans-serif; 
+            font-size: 100%;
+        }
+        .linkstd{
+            /*text-decoration: none;*/
+            cursor: pointer;
+            color: #000000;
+        }
+        .linkstd:hover{
+            color:#00BF63;
+        }
+
+/*MI PERFIL*/
+.contenedormiperfil{
+    width: 100%;
+    height: 150%;
+    background-color: #ffffff;
+}
+.titulomiperfil{
+    width: 60%;
+    height: 5%;
+    background-color: #00BF63;
+    border-radius: 10px;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 190%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.contenedorizqmiperfil{
+    width:50%;
+    height: 92%;
+    background-color: #ffffff;
+    float: left;
+    align-items: center;
+}
+.contenedordermiperfil{
+    width:50%;
+    height: 87%;
+    background-color: #ffffff;
+    float: right;
+    align-items: center;
+}
+
+.contenedordatosizqmiperfil{
+    width:80%;
+    height: 95%;
+    background-color: #ffffff;
+    text-align: left;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 150%;
+}
+
+.contenedordatosdermiperfil{
+    width:80%;
+    height: 95%;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    
+}
+    .divpesoyfechamiperfil{
+        width: 100%;
+        height: 12%;
+        background-color: #ffffff;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: left;
+        font-family: 'Codec Pro', sans-serif; 
+        font-size: 150%;
+    }
+
+.btneditar{
+    width: 60%;
+    height: 7%;
+    background-color: #F3F3F3;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 90%;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.botonguardarmiperfil{
+    width: 60%;
+    height: 7%;
+    padding: 10px 20px;
+    background-color: #00BF63;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 90%;
+    font-weight: bold;
+    font-family: 'Codec Pro', sans-serif; 
+
+}
+.textareamiperfil{
+    width: 100%;
+    height: 25%;
+    border: none;
+    border-radius: 20px;
+    resize: none; 
+    padding: 10px;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 90%;
+    background-color: #ededed;
+}
+
+.inputcrearmiperfil{
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 90%;
+    border: none;
+    border-radius: 20px;
+    background-color: #ededed;
+}
+.inputdatosdermiperfil{
+    width: 100%;
+    height: 50%;
+    padding: 10px;
+    font-family: 'Codec Pro', sans-serif; 
+    font-size: 90%;
+    border: none;
+    border-radius: 20px;
+    background-color: #ededed;
+}

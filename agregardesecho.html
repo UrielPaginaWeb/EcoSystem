@@ -1,0 +1,135 @@
+
+<html>
+    <head>
+        <title>Agregar Desecho</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="logoES.png">
+        <link rel="stylesheet" type="text/css" href="usuario.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap">
+        
+    </head>
+    <center>    
+    <body>
+        <div class="divmenu">
+            <div id="side-panel" class="contenido">
+                <a href="miperfil.html">Mi perfil</a><br>
+                <a href="usuario.html">Panel</a><br>
+                <a href="subidosrecientes.html">Subidos recientes</a><br>
+                <a href="login.html">Cerrar sesión</a>
+            </div>  
+                <div id="side-panel-trigger" class="side-panel-trigger">
+                <a href="#" onclick="toggleSidePanel()">
+                    <img src="menu.png" width="60px">
+                </a>
+            </div>
+                <script>
+                    function toggleSidePanel() {
+                    var sidePanel = document.getElementById('side-panel');
+                    sidePanel.style.display = (sidePanel.style.display === 'block') ? 'none' : 'block';
+                }
+                </script>
+        </div>
+        <div class="contenedoragregardesecho">
+            <br>
+            <div class="titulo">
+                <label for="crear">Agregar desecho tecnológico</label>
+            </div>
+            <div class="contenedorizq"  >
+                <div class="contenedordatosizq" id="div3">
+                    <label for="" class="labeldatosgenerales">Datos generales</label><br><br>
+                    
+                    <label for="">*Número de serie:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                    <label for="">*Nombre:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                    <label for="">*Marca:</label><br>
+                    <input class="inputcrear" type="text"><br><br>
+                    <label for="">*Modelo:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                    <label for="">Color:</label><br>
+                    <input class="inputcrear" type="text" ><br><br>
+                </div>
+            </div><br><br><br>
+            <div class="contenedorder">
+                <div class="contenedordatosder" id="div4">
+                    <div class="divdatosder2">
+                        <div class="divpeso">
+                            <label for="">*Peso:</label><br>
+                            <input class="inputdatosder2" type="text" ><br><br>
+                        </div>
+                        <div class="divfecha">
+                            <label for="">Fecha de adquisicion:</label><br>
+                            <input class="inputdatosder2" type="date" ><br><br>
+                        </div>
+                    </div>
+                    <div class="labels">
+                        <label for="" >Imagenes:</label><br>
+                    </div>
+                    <div class="divimagenes">
+                            <div id="image-preview"></div><br>
+                    </div>
+                    <div class="btnseleccionae">
+                        <label for="file-input" class="custom-file-button"><img src="iconosubir.png" alt="Upload icon" style="width: 12%;">Seleccionar archivos</label>
+                        <input type="file" id="file-input" multiple accept="image/*" style="display: none;">
+                    </div>
+                    <br><br>
+                    <button class="botonguardar" onclick="window.location.href='desechoregistrado.html'">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function showSelectedFiles() {
+    var input = document.getElementById('file-input');
+    var fileList = input.files;
+
+    var imagePreview = document.getElementById('image-preview');
+
+    // Recorremos los archivos seleccionados
+    for (var i = 0; i < fileList.length; i++) {
+        var file = fileList[i];
+
+        // Verificamos si es una imagen
+        if (file.type.match('image.*')) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                // Creamos un contenedor para la miniatura y el botón de eliminar
+                var container = document.createElement('div');
+                container.classList.add('image-container');
+
+                // Creamos un elemento de imagen para mostrar la miniatura
+                var img = document.createElement('img');
+                img.src = e.target.result;
+                img.style.maxWidth = '100px'; // Tamaño máximo de la miniatura
+                img.style.maxHeight = '100px'; // Tamaño máximo de la miniatura
+                container.appendChild(img);
+
+                // Creamos un botón de eliminar
+                var deleteButton = document.createElement('button');
+                deleteButton.textContent = 'X';
+                deleteButton.classList.add('delete-button');
+                deleteButton.onclick = function() {
+                    container.remove(); // Eliminamos el contenedor de la miniatura al hacer clic en el botón
+                };
+                container.appendChild(deleteButton);
+
+                // Agregamos el contenedor al contenedor de vista previa de imágenes
+                imagePreview.appendChild(container);
+            }
+
+            // Leemos el archivo como un dato URL
+            reader.readAsDataURL(file);
+        }
+    }
+}
+
+// Agregar un evento al campo de entrada de archivos para mostrar las miniaturas cuando se seleccionen archivos
+document.getElementById('file-input').addEventListener('change', showSelectedFiles);
+
+</script>
+
+        
